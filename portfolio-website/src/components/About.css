@@ -1,0 +1,106 @@
+
+.about-container {
+   width:100%;
+
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f0f0f0;
+  background: #1a1a1a;
+}
+
+/* Header section */
+.about-head {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-head h1.about {
+  font-size: 3rem;
+  color: #e4d94e;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.about-para {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #dcdcdc;
+}
+
+/* Education section */
+.about-education {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Each education item */
+.about-educ-head {
+  background: #2a2a2a;
+  padding: 20px 25px;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.about-educ-head:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.date {
+  font-size: 1rem;
+  color: #e4d94e;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Responsive grid */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col-12 {
+  flex: 1 1 100%;
+}
+
+/* Media Queries for tablets and phones */
+@media (max-width: 992px) {
+  .about-head h1.about {
+    font-size: 2.5rem;
+  }
+  .about-para {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    padding: 40px 15px;
+  }
+  .about-head h1.about {
+    font-size: 2rem;
+  }
+  .about-para {
+    font-size: 0.95rem;
+  }
+  .about-educ-head {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-head h1.about {
+    font-size: 1.8rem;
+  }
+  .about-para {
+    font-size: 0.9rem;
+  }
+  .about-educ-head {
+    padding: 12px 15px;
+  }
+}
+

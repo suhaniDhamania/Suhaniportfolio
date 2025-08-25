@@ -1,0 +1,115 @@
+
+.skills-container {
+   width:100%;
+ height:100vh;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a1a1a;
+  color: #f0f0f0;
+}
+
+/* Header section */
+.skills-container .div {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.skills-container h1 {
+  font-size: 3rem;
+  color: #e4d94e;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.skills-desc {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #dcdcdc;
+}
+
+/* Skills grid */
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each skill card */
+.skill-card {
+  flex: 1 1 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.skill-box {
+  background: #2a2a2a;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 180px;
+}
+
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+  color: #e4d94e;
+  margin-bottom: 15px;
+}
+
+.skill-name {
+  font-size: 1rem;
+  color: #f0f0f0;
+  font-weight: 600;
+}
+
+/* Media Queries for tablets and phones */
+@media (max-width: 992px) {
+  .skills-container h1 {
+    font-size: 2.5rem;
+  }
+  .skills-desc {
+    font-size: 1rem;
+  }
+  .skill-card {
+    flex: 1 1 30%;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 40px 15px;
+  }
+  .skills-container h1 {
+    font-size: 2rem;
+  }
+  .skills-desc {
+    font-size: 0.95rem;
+  }
+  .skill-card {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container h1 {
+    font-size: 1.8rem;
+  }
+  .skills-desc {
+    font-size: 0.9rem;
+  }
+  .skill-card {
+    flex: 1 1 90%;
+  }
+  .skill-box {
+    padding: 20px 15px;
+  }
+}

@@ -1,0 +1,142 @@
+
+.work-container {
+  width:100%;
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #1a1a1a;
+  color: #f0f0f0;
+}
+
+/* Header section */
+.work-container .div {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.work-container h1 {
+  font-size: 3rem;
+  color: #e4d94e;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.project-des {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #dcdcdc;
+}
+
+/* Project cards */
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Each card */
+.card {
+  background: #2a2a2a;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.card img {
+  border-bottom: 1px solid #444;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+  font-size: 1.2rem;
+  color: #e4d94e;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #dcdcdc;
+  margin-bottom: 15px;
+}
+
+/* Project button */
+.project-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e4d94e;
+  color: #1a1a1a;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.3s, color 0.3s;
+}
+
+.project-btn:hover {
+  background: #f0e85e;
+  color: #000;
+}
+
+/* Responsive grid */
+.col-4 {
+  flex: 1 1 30%;
+  display: flex;
+  justify-content: center;
+}
+
+/* Media Queries for tablets and phones */
+@media (max-width: 992px) {
+  .work-container h1 {
+    font-size: 2.5rem;
+  }
+  .project-des {
+    font-size: 1rem;
+  }
+  .col-4 {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .work-container {
+    padding: 40px 15px;
+  }
+  .work-container h1 {
+    font-size: 2rem;
+  }
+  .project-des {
+    font-size: 0.95rem;
+  }
+  .col-4 {
+    flex: 1 1 100%;
+  }
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-container h1 {
+    font-size: 1.8rem;
+  }
+  .project-des {
+    font-size: 0.9rem;
+  }
+  .card-body {
+    padding: 15px;
+  }
+}
+
+
+
