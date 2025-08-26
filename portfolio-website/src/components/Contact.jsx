@@ -7,8 +7,13 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
+<>
+ 
+     
     <div className="contact-container" id="contact">
-      <h1 data-aos="fade-right">Contact.</h1>
+      <div className="head">
+       <h1 dstyle={{textAlign:"center",color:"#e4d94e",backgroundColor:"#1a1a1a"}}ata-aos="fade-right"  >Contact.</h1>
+    </div>
       <div className="contact-content">
         <div data-aos="fade-right" className="contact-image">
           <img src={contactImage} alt="Contact" />
@@ -24,6 +29,8 @@ const Contact = () => {
         </div>
       </div>
     </div>
+
+</>
   );
 };
 
