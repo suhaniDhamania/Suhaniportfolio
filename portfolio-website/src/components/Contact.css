@@ -2,7 +2,7 @@
 .contact-container {
   width: 100%; 
  
-  height:100vh;
+  min-height:100vh;
   padding: 60px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #1a1a1a;
@@ -108,5 +108,10 @@
   .contact-image img {
     max-width: 300px;
   }
+   .contact-container {
+    padding-bottom: 50px;  
+  }
 }
+
+
 
