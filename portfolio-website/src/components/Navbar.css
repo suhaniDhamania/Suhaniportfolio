@@ -1,7 +1,5 @@
-
 .hero-navbar {
   width: 100%;
-  position: fixed;
   top: 0;
   left: 0;
   background: #1a1a1a;
@@ -22,11 +20,11 @@
   cursor: pointer;
 }
 
-
 .hero-nav-links {
   display: flex;
   align-items: center;
   gap: 30px;
+  transition: transform 0.3s ease-in-out;
 }
 
 .route {
@@ -58,30 +56,19 @@
   transform: scale(1.2);
 }
 
-
-
-@media (max-width: 992px) {
-  .hero-navbar {
-    padding: 15px 25px;
-  }
-  .hero-nav-links {
-    gap: 20px;
-  }
-}
-
-
+/* ----------- Responsive ----------- */
 @media (max-width: 768px) {
   .hero-nav-links {
-    position: absolute;
-    top: 70px;
+    position: fixed;
+    top: 0;
     right: 0;
-    background: #1a1a1a;
+    height: 50vh;
     flex-direction: column;
-    width: 200px;
-    padding: 20px;
-    gap: 15px;
+    background: #1a1a1a;
+    width: 250px;
+    padding-top: 100px;
+    gap: 20px;
     transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.6);
   }
 
@@ -89,17 +76,12 @@
     transform: translateX(0);
   }
 
-  .hero-icons {
-    justify-content: center;
-    width: 100%;
-    margin-top: 10px;
-  }
-
   .menu-toggle {
     display: block;
     cursor: pointer;
     font-size: 1.6rem;
     color: #e4d94e;
+    z-index: 1100;
   }
 }
 

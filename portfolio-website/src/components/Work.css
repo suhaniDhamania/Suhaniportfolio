@@ -1,19 +1,18 @@
-
 .work-container {
-  width:100%;
+  width: 100%;
   padding: 60px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #1a1a1a;
   color: #f0f0f0;
 }
 
-/* Header section */
-.work-container .div {
+/* Header */
+.work-header {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.work-container h1 {
+.work-header h1 {
   font-size: 3rem;
   color: #e4d94e;
   letter-spacing: 2px;
@@ -28,21 +27,30 @@
   color: #dcdcdc;
 }
 
-/* Project cards */
+/* Project cards wrapper */
 .project-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
 }
 
-/* Each card */
+/* Each project column */
+.project-col {
+  flex: 1 1 30%;
+  max-width: 350px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card design */
 .card {
+  width: 100%;
   background: #2a2a2a;
   border-radius: 10px;
   overflow: hidden;
-  transition: transform 0.3s, box-shadow 0.3s;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .card:hover {
@@ -50,7 +58,10 @@
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
 
-.card img {
+.card-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
   border-bottom: 1px solid #444;
 }
 
@@ -88,22 +99,15 @@
   color: #000;
 }
 
-/* Responsive grid */
-.col-4 {
-  flex: 1 1 30%;
-  display: flex;
-  justify-content: center;
-}
-
-/* Media Queries for tablets and phones */
+/* ✅ Responsive */
 @media (max-width: 992px) {
-  .work-container h1 {
+  .work-header h1 {
     font-size: 2.5rem;
   }
   .project-des {
     font-size: 1rem;
   }
-  .col-4 {
+  .project-col {
     flex: 1 1 45%;
   }
 }
@@ -112,22 +116,24 @@
   .work-container {
     padding: 40px 15px;
   }
-  .work-container h1 {
+  .work-header h1 {
     font-size: 2rem;
   }
   .project-des {
     font-size: 0.95rem;
   }
-  .col-4 {
+  .project-col {
     flex: 1 1 100%;
+    max-width: 100%;
   }
   .card {
-    width: 90%;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
 @media (max-width: 480px) {
-  .work-container h1 {
+  .work-header h1 {
     font-size: 1.8rem;
   }
   .project-des {

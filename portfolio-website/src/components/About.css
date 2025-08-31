@@ -1,14 +1,12 @@
-
 .about-container {
-   width:100%;
-
+  width: 100%;
   padding: 60px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #f0f0f0;
   background: #1a1a1a;
 }
 
-/* Header section */
+/* Header */
 .about-head {
   text-align: center;
   margin-bottom: 50px;
@@ -29,14 +27,14 @@
   color: #dcdcdc;
 }
 
-/* Education section */
+/* Education wrapper */
 .about-education {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 25px;
 }
 
-/* Each education item */
+/* Each education card */
 .about-educ-head {
   background: #2a2a2a;
   padding: 20px 25px;
@@ -56,18 +54,7 @@
   margin-bottom: 10px;
 }
 
-/* Responsive grid */
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.col-12 {
-  flex: 1 1 100%;
-}
-
-/* Media Queries for tablets and phones */
+/* ✅ Responsive */
 @media (max-width: 992px) {
   .about-head h1.about {
     font-size: 2.5rem;
@@ -103,4 +90,3 @@
     padding: 12px 15px;
   }
 }
-
