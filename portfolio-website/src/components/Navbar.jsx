@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [Isopen,setIsopen]=useState(true);
 
-  const closeMenu = () => setIsOpen(false);
+  
 
   return (
     <div className="hero-navbar">
@@ -16,19 +16,22 @@ const Navbar = () => {
       </div>
 
       {/* Hamburger Icon */}
-      <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
-        <i className={isOpen ? "fa-solid fa-times" : "fa-solid fa-bars"}></i>
+      <div className="menu-toggle">
+         <i  onClick={()=>setIsopen(!Isopen)} className={Isopen ? "fa-solid fa-bars" : "fa-solid fa-times"}></i>
+        
       </div>
 
-      <div
+     {
+      !Isopen &&(
+         <div
         data-aos="fade-down"
-        className={`hero-nav-links ${isOpen ? "active" : ""}`}
+        className="hero-nav-links" 
       >
-        <Link onClick={closeMenu} className="route" to="/">Home</Link>
-        <Link onClick={closeMenu} className="route" to="about">About</Link>
-        <Link onClick={closeMenu} className="route" to="work">Work</Link>
-        <Link onClick={closeMenu} className="route" to="skills">Skills</Link>
-        <Link onClick={closeMenu} className="route" to="contact">Contact</Link>
+        <Link  onClick={()=>setIsopen(!Isopen)} className="route" to="/">Home</Link>
+        <Link onClick={()=>setIsopen(!Isopen)} className="route" to="about">About</Link>
+        <Link onClick={()=>setIsopen(!Isopen)} className="route" to="work">Work</Link>
+        <Link onClick={()=>setIsopen(!Isopen)} className="route" to="skills">Skills</Link>
+        <Link onClick={()=>setIsopen(!Isopen)} className="route" to="contact">Contact</Link>
 
         <div className="hero-icons">
           <a
@@ -47,6 +50,8 @@ const Navbar = () => {
           </a>
         </div>
       </div>
+      )
+     }
     </div>
   );
 };

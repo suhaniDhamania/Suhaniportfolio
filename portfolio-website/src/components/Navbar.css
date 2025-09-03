@@ -60,16 +60,17 @@
 @media (max-width: 768px) {
   .hero-nav-links {
     position: fixed;
-    top: 0;
-    right: 0;
+    top: 80px;
+    right: 250px;
     height: 50vh;
     flex-direction: column;
     background: #1a1a1a;
     width: 250px;
-    padding-top: 100px;
-    gap: 20px;
+    padding-top: 50px;
+    
     transform: translateX(100%);
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.6);
+    z-index:3;
   }
 
   .hero-nav-links.active {

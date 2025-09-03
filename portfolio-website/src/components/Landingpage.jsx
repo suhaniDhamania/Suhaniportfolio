@@ -11,17 +11,15 @@ const LandingPage = () => {
     <>
       <Home />
 <About/>
-<Work />
-        <Skills />
-         <Contact />
+ <Work />
+      <Skills />
+      <Contact />
     </>
   );
 };
 
 export default LandingPage;
 
-    
-    /* <Work />
+/* <Work />
         <Skills />
          <Contact />*/
-   
