@@ -1,37 +1,40 @@
+
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
-  const [Isopen,setIsopen]=useState(true);
-
-  
+  const [isOpen, setIsOpen] = useState(false);
 
   return (
     <div className="hero-navbar">
+
       <div className="head">
         <h3 data-aos="fade-down" className="hero-logo">
           Suhani Dhamania
         </h3>
       </div>
 
-      {/* Hamburger Icon */}
-      <div className="menu-toggle">
-         <i  onClick={()=>setIsopen(!Isopen)} className={Isopen ? "fa-solid fa-bars" : "fa-solid fa-times"}></i>
-        
-      </div>
-
-     {
-      !Isopen &&(
-         <div
+    
+      <div
         data-aos="fade-down"
-        className="hero-nav-links" 
+        className={`hero-nav-links ${isOpen ? "active" : ""}`}
       >
-        <Link  onClick={()=>setIsopen(!Isopen)} className="route" to="/">Home</Link>
-        <Link onClick={()=>setIsopen(!Isopen)} className="route" to="about">About</Link>
-        <Link onClick={()=>setIsopen(!Isopen)} className="route" to="work">Work</Link>
-        <Link onClick={()=>setIsopen(!Isopen)} className="route" to="skills">Skills</Link>
-        <Link onClick={()=>setIsopen(!Isopen)} className="route" to="contact">Contact</Link>
+        <Link onClick={() => setIsOpen(false)} className="route" to="/">
+          Home
+        </Link>
+        <Link onClick={() => setIsOpen(false)} className="route" to="about">
+          About
+        </Link>
+        <Link onClick={() => setIsOpen(false)} className="route" to="work">
+          Work
+        </Link>
+        <Link onClick={() => setIsOpen(false)} className="route" to="skills">
+          Skills
+        </Link>
+        <Link onClick={() => setIsOpen(false)} className="route" to="contact">
+          Contact
+        </Link>
 
         <div className="hero-icons">
           <a
@@ -50,8 +53,15 @@ const Navbar = () => {
           </a>
         </div>
       </div>
-      )
-     }
+
+     
+      <div className="menu-toggle" onClick={() => setIsOpen(!isOpen)}>
+        {isOpen ? (
+          <i className="fa-solid fa-times"></i>
+        ) : (
+          <i className="fa-solid fa-bars"></i>
+        )}
+      </div>
     </div>
   );
 };

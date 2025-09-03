@@ -11,11 +11,14 @@ import AOS from "aos";
 
 
 
+
+
 function App() {
    useEffect(() => {
     AOS.init({
-      duration: 1000, 
-      once: true,     
+    offset: 0, 
+  duration: 800,
+  once: true,  
     });
   }, []);
   return (
