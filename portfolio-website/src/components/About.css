@@ -10,7 +10,7 @@
   padding: 60px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: #f0f0f0;
-  background: #1a1a1a;
+  background: transparent;
 }
 
 /* Header */
@@ -34,16 +34,15 @@
   color: #dcdcdc;
 }
 
-/* Education wrapper */
+
 .about-education {
   display: flex;
   flex-direction: column;
   gap: 25px;
 }
 
-/* Each education card */
 .about-educ-head {
-  background: #2a2a2a;
+ background : rgba(20, 20, 20, 0.7);
   padding: 20px 25px;
   border-radius: 10px;
   transition: transform 0.3s, box-shadow 0.3s;

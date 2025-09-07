@@ -5,7 +5,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #1a1a1a;
+  background: black;
   color: #f0f0f0;
   display: flex;
   justify-content: space-between;
@@ -24,7 +24,6 @@
   cursor: pointer;
 }
 
-/* 🔹 Nav Links (Desktop Default) */
 .hero-nav-links {
   display: flex;
   align-items: center;
@@ -45,7 +44,7 @@
   transform: translateY(-2px);
 }
 
-/* 🔹 Social Icons */
+
 .hero-icons {
   display: flex;
   gap: 15px;
@@ -62,15 +61,14 @@
   transform: scale(1.2);
 }
 
-/* ----------- Mobile Responsive ----------- */
 @media (max-width: 768px) {
   .hero-nav-links {
     position: fixed;
     top: 80px;
-    right: -250px;   /* hidden by default */
+    right: -250px;  
     height: 50vh;
     flex-direction: column;
-    background: #1a1a1a;
+    background: black;
     width: 250px;
     padding-top: 50px;
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.6);
@@ -78,7 +76,7 @@
   }
 
   .hero-nav-links.active {
-    right: 0; /* slide in when active */
+    right: 0; 
   }
 
   .menu-toggle {
@@ -89,13 +87,12 @@
     z-index: 1100;
   }
 
-  /* Optional: mobile me icons sidebar ke andar hi rahenge */
+
   .hero-icons {
     margin-top: 20px;
   }
 }
 
-/* ----------- Desktop (hide hamburger) ----------- */
 @media (min-width: 769px) {
   .menu-toggle {
     display: none;

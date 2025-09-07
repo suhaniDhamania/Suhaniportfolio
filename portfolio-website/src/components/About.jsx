@@ -1,8 +1,13 @@
 import React from "react";
 import "./About.css";
-
+import backgroundvideo from "../assets/background.mp4"
 const About = () => {
   return (
+
+   <>
+    <video autoPlay loop muted playsInline className="bg-video">
+            <source src={backgroundvideo} type="video/mp4" />
+          </video>
     <div className="about-container" id="about">
       <div data-aos="fade-left" className="about-head">
         <h1 className="about">about...</h1>
@@ -49,6 +54,7 @@ const About = () => {
         </div>
       </div>
     </div>
+   </>
   );
 };
 
