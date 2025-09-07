@@ -12,7 +12,8 @@
   align-items: center;
   padding: 18px 40px;
   z-index: 1000;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+ box-shadow: 0 2px 30px rgba(255, 255, 0, 0.15);
+  border-bottom: 2px solid #ffcc00; 
 }
 
 /* 🔹 Logo */

@@ -9,7 +9,7 @@
 .hero-container {
   width: 100%;
   min-height: 100vh;
-  background: transparent;
+  background: black;
   display: flex;
   align-items: center;
   justify-content: center;

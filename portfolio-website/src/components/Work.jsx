@@ -1,14 +1,14 @@
 import React from "react";
 import { projects } from "../utils/Projectlist";
 import "./Work.css";
-import backgroundvideo from "../assets/background.mp4"
+// import backgroundvideo from "../assets/background.mp4"
 
 const Work = () => {
   return (
   <>
-   <video autoPlay loop muted playsInline className="bg-video">
+   {/* <video autoPlay loop muted playsInline className="bg-video">
               <source src={backgroundvideo} type="video/mp4" />
-            </video>
+            </video> */}
     <div className="work-container" id="work">
       <div data-aos="fade-right" className="work-header">
         <h1>work.</h1>

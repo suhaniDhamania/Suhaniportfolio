@@ -8,7 +8,7 @@
   width: 100%;
   padding: 60px 20px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: transparent;
+  background: black;
   color: #f0f0f0;
 }
 
@@ -105,7 +105,7 @@
   color: #000;
 }
 
-/* ✅ Responsive */
+
 @media (max-width: 992px) {
   .work-header h1 {
     font-size: 2.5rem;

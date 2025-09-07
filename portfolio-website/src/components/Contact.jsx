@@ -4,14 +4,14 @@
 import React from "react";
 import contactImage from "../assets/contact.jpg";
 import "./Contact.css";
-import backgroundvideo from "../assets/background.mp4"
+// import backgroundvideo from "../assets/background.mp4"
 
 const Contact = () => {
   return (
 <>
-  <video autoPlay loop muted playsInline className="bg-video">
+  {/* <video autoPlay loop muted playsInline className="bg-video">
                    <source src={backgroundvideo} type="video/mp4" />
-                 </video>
+                 </video> */}
      
     <div className="contact-container" id="contact">
       <div className="head">
