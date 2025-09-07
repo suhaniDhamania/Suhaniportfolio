@@ -5,7 +5,7 @@ import About from "./About";
 import Work from "./Work";
 import Skills from "./Skills";
 import Contact from "./Contact";
-import "./LandingPage.css";
+import "./Landingpage.css";
 import backgroundvideo from "../assets/background.mp4"
 const LandingPage = () => {
   return (
